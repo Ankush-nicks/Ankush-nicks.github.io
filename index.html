@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">     
+        <link rel = "stylesheet" href = "style.css">   
+    
+        <title>Ankush</title>
+
+        <script src="https://kit.fontawesome.com/ace85d2613.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div id="header">
+            <div class="comtainer">
+                <nav><img src="images\logo.png" class="logo">
+                    <ul>
+                        <li>
+                            <a href="#header">Home</a>
+                            <a href="#about">About</a>
+                            <!-- <a href="#about">Education</a> -->
+                            <a href="#projects">Projects</a>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <!-- <p>UI/UX Designer</p> -->
+                    <h1>Hi, I'm <span>Ankush</span><br> Kumar Ramteke from India.</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------------about----------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/profile.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Greetings! I am pursing my M.Tech in Manufacturing from IIT Guwahati, 
+                        blending engineering prowess with design sensibilities. Proficient in SolidWorks and Creo, 
+                        I transform ideas into tangible prototypes. Intrigued by coding, I've embraced Python, C++, and SQL, and 
+                        my curiosity led me to the captivating realm of machine learning.</p>
+
+                        <p>My journey reflects adaptability and determination. 
+                            Effective communication and teamwork are my strengths, 
+                            cultivated at IIT Guwahati. With an unyielding thirst for learning, 
+                            I'm poised to innovate at the intersection of design, coding, and machine learning,
+                             making a meaningful impact in this ever-evolving technological landscape.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Python</span><br> python GUI based Interfaces.</li>
+                                <li><span>Web development</span><br>Html Css based Web development.</li>
+                                <li><span>Data Base Management</span><br> Sql based database Management.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Design Head</span><br> People For animals, Durg Bhilai (NGO).</li>
+                                <li><span>Industrial Training</span><br>Bhilai Steel Plant, SAIL.</li>
+                                <!-- <li><span>App Development</span><br> app Interfaces</li> -->
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>M.Tech 24</span><br> Indian Institute of Technolgy, Guwahati</li>
+                                <li><span>B.Tech 19</span><br>Bhilai Institute of Technolgy, Durg</li>
+                                <!-- <li><span>App Development\\</span><br> app Interfaces</li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ------------------------Projects -->
+        <div id="projects">
+            <div class="container">
+                <h1 class="sub-title">Projects</h1>
+                <div class="projects-list">
+                        <div>
+                            <img src="images/project-1.png">
+                            <i class="fa-solid fa-code"></i>
+                            <h2>House Price Prediction</h2>
+                            <p>Employing advanced machine learning techniques to develop a predictive model for Boston house prices, leveraging a comprehensive dataset to analyze key features and variables influencing the real estate market in order to provide accurate and insightful price forecasts.</p>
+                            <a href="#">learn more</a>
+                        </div>
+                        <div>
+                            <img src="images/project-2.png">
+                            <i class="fa-solid fa-database"></i>
+                            <h2>Hospital Management</h2>
+                            <p>Crafting a modern hospital database management system using Python, featuring a sleek GUI powered by Tkinter and Ttkbootstrap, streamlining and enhancing the efficiency of medical information organization and retrieval</p>
+                            <a href="#">learn more</a>
+                        </div>
+                        <div>
+                            <img src="images/project-3.png">
+                            <i class="fa-solid fa-table"></i>
+                            <h2>Diwali Sales visualization</h2>
+                            <p>Creating dynamic data visualizations using Tableau to analyze and present Diwali sales dataset, unraveling valuable insights and trends within the data</p>
+                            <a href="#">learn more</a>
+                        </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+
+        <!-- -------------Contact ------------------ -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>ankushramteke07@gmail.com</p>
+                        <p><i class="fa-solid fa-phone-flip"></i>+91-9407962306</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-github"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            <!-- <a href=""><i class="fa-brands fa-github"></i></a> -->
+                            <!-- <a href=""><i class="fa-brands fa-github"></i></a> -->
+                        </div>
+                        <a href="images/s10845-023-02171-8.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>copyright @ankush. made with <i class="fa-solid fa-heart" style="color: #ff0000;"></i>.</p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+                var tablinks = document.getElementsByClassName("tab-links")
+                var tabcontents = document.getElementsByClassName("tab-contents")
+                function opentab(tabname){
+                    for (tablink of tablinks){
+                        tablink.classList.remove("active-link");
+                    }
+                    for (tabcontent of tabcontents){
+                        tabcontent.classList.remove("active-tab");
+                    }
+                    event.currentTarget.classList.add("active-link");
+                   document.getElementById(tabname).classList.add("active-tab");
+                }
+            </script>
+            <form name="submit-to-google-sheet">
+                <input name="email" type="email" placeholder="Email" required>
+                <button type="submit">Send</button>
+              </form>
+              
+              <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbzK91kK4frTKYeZ9d-3oIaEVlo4WtujrjzxfV7zlOUKoVbBf_QOyzXVyPKkVHaAvSzp/exec'
+                const form = document.forms['submit-to-google-sheet']
+              
+                form.addEventListener('submit', e => {
+                  e.preventDefault()
+                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => console.log('Success!', response))
+                    .catch(error => console.error('Error!', error.message))
+                })
+              </script>
+    </body>        
+</html>
