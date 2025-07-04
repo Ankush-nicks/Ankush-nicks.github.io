@@ -1,197 +1,329 @@
 <!DOCTYPE html>
 <html>
-    <head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ankush</title>
+    <script
+      src="https://kit.fontawesome.com/ace85d2613.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">     
-        <link rel = "stylesheet" href = "style.css">   
-    
-        <title>Ankush</title>
-
-        <script src="https://kit.fontawesome.com/ace85d2613.js" crossorigin="anonymous"></script>
-    </head>
-
-    <body>
-        <div id="header">
-            <div class="comtainer">
-                <nav><img src="images\logo.png" class="logo">
-                    <ul>
-                        <li>
-                            <a href="#header">Home</a>
-                            <a href="#about">About</a>
-                            <!-- <a href="#about">Education</a> -->
-                            <a href="#projects">Projects</a>
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="header-text">
-                    <!-- <p>UI/UX Designer</p> -->
-                    <h1>Hi, I'm <span>Ankush</span><br> Kumar Ramteke from India.</h1>
-                </div>
-            </div>
+  <body>
+    <div id="header">
+      <div class="comtainer">
+        <nav>
+          <ul>
+            <li>
+              <a href="#header">Home</a>
+              <a href="#about">About</a>
+              <a href="#projects">Projects</a>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <h1>
+            Hi, I'm <span>Ankush</span><br />
+            Kumar Ramteke from India.
+          </h1>
         </div>
+      </div>
+    </div>
 
-        <!-- ----------------about----------- -->
-        <div id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
-                        <img src="images/profile.png">
-                    </div>
-                    <div class="about-col-2">
-                        <h1 class="sub-title">About Me</h1>
-                        <p>I'm an M.Tech graduate in Manufacturing from IIT Guwahati, 
-                        where I honed skills in design and technology to transform ideas into impactful solutions. 
-                        With a foundation in SolidWorks, Creo, Python, and SQL, and a growing passion for machine learning, 
-                        I thrive on innovation. Adaptable and collaborative, I’m excited to drive change at the intersection of 
-                        engineering, coding, and data science.</p>
+    <!-- ----------------about----------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/profile.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I'm an M.Tech graduate from IIT Guwahati, currently working as a
+              Software Developer and Instructor <br />
+              at Nxtwave Institute of Advance Technology (NIAT). I specialize in
+              building impactful web applications and teaching <br />
+              next-gen developers. With strong proficiency in HTML, CSS,
+              JavaScript, React.js, Python, and data science,<br />
+              I enjoy creating real-world solutions through code. Passionate
+              about innovation and continuous learning, <br />
+              I thrive at the intersection of technology, education, and
+              data-driven development.
+            </p>
 
-                        <!-- <p>My journey reflects adaptability and determination. 
-                            Effective communication and teamwork are my strengths, 
-                            cultivated at IIT Guwahati. With an unyielding thirst for learning, 
-                            I'm poised to innovate at the intersection of design, coding, and machine learning,
-                             making a meaningful impact in this ever-evolving technological landscape.
-                        </p> -->
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links"onclick="opentab('experience')">Experience</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>Python</span><br>Skilled in data analysis, predictive modeling, and automation. Proficient with libraries like NumPy, Pandas, Matplotlib, and Scikit-Learn to drive insights and develop data solutions.</li>
-                                <li><span>Web development</span><br>Proficient in building responsive, visually appealing websites with HTML and CSS. Experienced in crafting user-friendly layouts, styling components, and optimizing for cross-browser compatibility.</li>
-                                <li><span>Data Base Management</span><br> Skilled in database management and query optimization for efficient data retrieval. Proficient in writing complex queries, managing data structures, and ensuring data integrity for insightful analysis.</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>Teaching Asistance</span><br> Indian Institute of Technolgy, Guwahati</li>
-                                <li><span>Design Head</span><br> People For animals, Durg Bhilai (NGO).</li>
-                                <li><span>Industrial Training</span><br>Bhilai Steel Plant, SAIL.</li>
-                                
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>M.Tech 24</span><br> Indian Institute of Technolgy, Guwahati</li>
-                                <li><span>B.Tech 19</span><br>Bhilai Institute of Technolgy, Durg</li>
-                                <!-- <li><span>App Development\\</span><br> app Interfaces</li> -->
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Python</span><br />
+                  Skilled in data analysis, predictive modeling, and
+                  automation. Proficient with libraries such as NumPy, Pandas,
+                  Matplotlib, and Scikit-Learn to derive insights and develop
+                  robust data-driven solutions.
+                </li>
+                <li>
+                  <span>Web Development</span><br />
+                  Proficient in building responsive and user-friendly web
+                  applications using HTML, CSS, and JavaScript. Experienced in
+                  crafting clean UI/UX designs, ensuring cross-browser
+                  compatibility, and optimizing performance.
+                </li>
+                <li>
+                  <span>React.js</span><br />
+                  Experienced in developing dynamic and scalable front-end
+                  applications using React.js. Skilled in component-based
+                  architecture, state management, hooks, and integrating APIs
+                  for seamless user experiences.
+                </li>
+                <li>
+                  <span>SQL & Database Management</span><br />
+                  Skilled in database design, data modeling, and query
+                  optimization for efficient data retrieval. Proficient in
+                  writing complex SQL queries and ensuring data integrity for
+                  analytics and application needs.
+                </li>
+                <li>
+                  <span>Data Science & Machine Learning</span><br />
+                  Strong foundation in data preprocessing, feature engineering,
+                  and supervised/unsupervised learning techniques. Experienced
+                  in developing end-to-end machine learning pipelines for
+                  real-world problem-solving.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Software Developer & Instructor</span><br />
+                  Nxtwave Institute of Advance Technology (NIAT)
+                </li>
+                <li>
+                  <span>Teaching Assistant</span><br />
+                  Indian Institute of Technology, Guwahati
+                </li>
+                <li>
+                  <span>Design Head</span><br />
+                  People For Animals, Durg-Bhilai (NGO)
+                </li>
+                <li>
+                  <span>Industrial Training</span><br />
+                  Bhilai Steel Plant, SAIL
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>M.Tech 24</span><br />
+                  Indian Institute of Technolgy, Guwahati
+                </li>
+                <li>
+                  <span>B.Tech 19</span><br />
+                  Bhilai Institute of Technolgy, Durg
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
 
-
-        <!-- ------------------------Projects -->
-        <div id="projects">
-            <div class="container">
-                <h1 class="sub-title">Projects</h1>
-                <div class="projects-list">
-                        <div>
-                            <img src="images/project-1.png">
-                            <i class="fa-solid fa-code"></i>
-                            <h2>Experimental and predictive studies of Submerged Arc Additive Manufacturing Method</h2>
-                            <p>Enhanced Submerged Arc Additive Manufacturing (SAAM) through data analysis, statistical modeling, and machine learning, achieving a 20% efficiency boost and 15% reduction in material waste, showcasing SAAM’s potential for aerospace, automotive, and energy industries.</p>
-                            <a href="https://drive.google.com/drive/folders/1GFs6sfcxQevi2ZzgLOiq9Lf2xQl9S-U0?usp=drive_link">learn more</a>
-                        </div>
-                        <div>
-                            <img src="images/project-2.png">
-                            <i class="fa-solid fa-database"></i>
-                            <h2>Hospital Management</h2>
-                            <p>Crafting a modern hospital database management system using Python, featuring a sleek GUI powered by Tkinter and Ttkbootstrap, streamlining and enhancing the efficiency of medical information organization and retrieval</p>
-                            <a href="https://github.com/Ankush-nicks/Hospital_Management_Database">learn more</a>
-                        </div>
-                        <div>
-                            <img src="images/project-3.png">
-                            <i class="fa-solid fa-table"></i>
-                            <h2>Diwali Sales visualization</h2>
-                            <p>Creating dynamic data visualizations using Tableau to analyze and present Diwali sales dataset, unraveling valuable insights and trends within the data</p>
-                            <a href="https://public.tableau.com/app/profile/ankush.ramteke/viz/Diwalisales/Dashboard1">learn more</a>
-                        </div>
-                </div>
-                <a href="#" class="btn">See more</a>
-            </div>
+    <!-- ------------------------Projects -->
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="projects-list">
+          <div>
+            <img src="images/tic tac toe.gif" />
+            <i class="fa-solid fa-gamepad"></i>
+            <h2>Interactive 2-Player Tic-Tac-Toe Game</h2>
+            <p>
+              A fully functional Tic-Tac-Toe game built using HTML, CSS, and
+              JavaScript. The game includes engaging visuals and a celebratory
+              confetti animation for the winning player. Designed for smooth
+              play and responsiveness across devices.
+            </p>
+            <a href="https://tic-tac-toe-seven-puce.vercel.app/" target="_blank"
+              >learn more</a
+            >
+          </div>
+          <div>
+            <img src="images/weather.gif" />
+            <i class="fa-solid fa-cloud"></i>
+            <h2>Weather Dashboard</h2>
+            <p>
+              A real-time weather application that displays current temperature,
+              wind speed, humidity, and a 4-day forecast for any city using the
+              OpenWeatherMap API. The UI is clean, dynamic, and fully responsive
+              for seamless user experience across devices.
+            </p>
+            <a href="https://weather-dashboard-io.vercel.app/" target="_blank"
+              >learn more</a
+            >
+          </div>
+          <div>
+            <img src="images/weightConverter.gif" />
+            <i class="fa-solid fa-weight-scale"></i>
+            <h2>Weight Converter App</h2>
+            <p>
+              A lightweight and user-friendly web tool for converting weights
+              from pounds to kilograms in real-time. Developed using HTML, CSS,
+              and JavaScript, this app offers smooth input handling, error
+              detection, and an auto-reset feature to keep the interface clean
+              and intuitive.
+            </p>
+            <a
+              href="https://pound-to-kg-weight-converter.vercel.app/"
+              target="_blank"
+              >learn more</a
+            >
+          </div>
+          <div>
+            <img src="images/recipe.gif" />
+            <i class="fa-solid fa-utensils"></i>
+            <h2>Recipe Finder App</h2>
+            <p>
+              A sleek and responsive web application that lets users search for
+              recipes by name or ingredients. It fetches data from TheMealDB API
+              and displays detailed information like ingredients, cooking steps,
+              cuisine category, area of origin, and even YouTube tutorials — all
+              inside a clean, card-based UI.
+            </p>
+            <a
+              href="https://recipe-finder-seven-ruby.vercel.app/"
+              target="_blank"
+              >learn more</a
+            >
+          </div>
+          <div>
+            <img src="images/hos.png" />
+            <i class="fa-solid fa-database"></i>
+            <h2>Hospital Management</h2>
+            <p>
+              Crafting a modern hospital database management system using
+              Python, featuring a sleek GUI powered by Tkinter and Ttkbootstrap,
+              streamlining and enhancing the efficiency of medical information
+              organization and retrieval
+            </p>
+            <a
+              href="https://github.com/Ankush-nicks/Hospital_Management_Database"
+              >learn more</a
+            >
+          </div>
+          <div>
+            <img src="images/sub.jpg" />
+            <i class="fa-solid fa-code"></i>
+            <h2>Experimental and predictive studies of SAAM</h2>
+            <p>
+              Enhanced Submerged Arc Additive Manufacturing (SAAM) through data
+              analysis, statistical modeling, and machine learning, achieving a
+              20% efficiency boost and 15% reduction in material waste,
+              showcasing SAAM’s potential for aerospace, automotive, and energy
+              industries.
+            </p>
+            <a
+              href="https://drive.google.com/drive/folders/1GFs6sfcxQevi2ZzgLOiq9Lf2xQl9S-U0?usp=drive_link"
+              >learn more</a
+            >
+          </div>
         </div>
+      </div>
+    </div>
 
-        <!-- -------------Contact ------------------ -->
-        <div id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="contact-left">
-                        <h1 class="sub-title">Contact Me</h1>
-                        <p><i class="fa-solid fa-paper-plane"></i>ankushramteke07@gmail.com</p>
-                        <p><i class="fa-solid fa-phone-flip"></i>+91-9407962306</p>
-                        <div class="social-icons">
-                            <a href=""><i class="fa-brands fa-github"></i></a>
-                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                            <!-- <a href=""><i class="fa-brands fa-github"></i></a> -->
-                            <!-- <a href=""><i class="fa-brands fa-github"></i></a> -->
-                        </div>
-                        <a href="images/resume.pdf" download class="btn btn2">Download CV</a>
-                    </div>
-                    <div class="contact-right">
-                        <form name="submit-to-google-sheet">
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="Email" placeholder="Your email" required>
-                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                            <button type="submit" class="btn btn2">Submit</button>
-                        </form>
-                    </div>
-                </div>
+    <!-- -------------Contact ------------------ -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i
+              >ankushramteke07@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone-flip"></i>+91-9407962306</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-github"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
             </div>
-            <div class="copyright">
-                <p>copyright @ankush. made with <i class="fa-solid fa-heart" style="color: #ff0000;"></i>.</p>
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <script>
-                var tablinks = document.getElementsByClassName("tab-links")
-                var tabcontents = document.getElementsByClassName("tab-contents")
-                function opentab(tabname){
-                    for (tablink of tablinks){
-                        tablink.classList.remove("active-link");
-                    }
-                    for (tabcontent of tabcontents){
-                        tabcontent.classList.remove("active-tab");
-                    }
-                    event.currentTarget.classList.add("active-link");
-                   document.getElementById(tabname).classList.add("active-tab");
-                }
-            </script>
+            <a href="images/resume.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
             <form name="submit-to-google-sheet">
-                <input name="email" type="email" placeholder="Email" required>
-                <button type="submit">Send</button>
-              </form>
-              
-              <script>
-                const scriptURL = 'https://script.google.com/macros/s/AKfycbzK91kK4frTKYeZ9d-3oIaEVlo4WtujrjzxfV7zlOUKoVbBf_QOyzXVyPKkVHaAvSzp/exec'
-                const form = document.forms['submit-to-google-sheet']
-              
-                form.addEventListener('submit', e => {
-                  e.preventDefault()
-                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                    .then(response => console.log('Success!', response))
-                    .catch(error => console.error('Error!', error.message))
-                })
-              </script>
-    </body>        
+              <input
+                type="text"
+                name="Name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          copyright @ankush. made with
+          <i class="fa-solid fa-heart" style="color: #ff0000"></i>.
+        </p>
+      </div>
+    </div>
+
+    <!-- ✅ SCRIPTS -->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzK91kK4frTKYeZ9d-3oIaEVlo4WtujrjzxfV7zlOUKoVbBf_QOyzXVyPKkVHaAvSzp/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
 </html>
