@@ -29,6 +29,7 @@ nav{
     justify-content:  space-between;
     flex-wrap: wrap;
     margin-left: 40px;
+    padding-top: 20px;
 }
 .logo{
     width: 140px;
